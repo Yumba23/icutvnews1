@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - ICU TV Admin Dashboard</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="profile.html" class="list-group-item list-group-item-action">Profile</a>
+          <a href="settings.html" class="list-group-item list-group-item-action active">Settings</a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-header">Settings</div>
+          <div class="card-body">
+            <form>
+              <h4>Profile Settings</h4>
+              <div class="form-group">
+                <label for="email"><b>Email</b></label>
+                <input type="email" class="form-control" id="email" value="admin@example.com">
+              </div>
+              <div class="form-group">
+                <label for="firstName"><b>First Name</b></label>
+                <input type="text" class="form-control" id="firstName" value="John">
+              </div>
+              <div class="form-group">
+                <label for="lastName"><b>Last Name</b></label>
+                <input type="text" class="form-control" id="lastName" value="Doe">
+              </div>
+              <button type="submit" class="btn btn-primary mb-4">Save Changes</button>
+            </form>
+            
+            <form>
+              <h4>Change Password</h4>
+              <div class="form-group">
+                <label for="currentPassword"><b>Current Password</b></label>
+                <input type="password" class="form-control" id="currentPassword" placeholder="Enter current password">
+              </div>
+              <div class="form-group">
+                <label for="newPassword"><b>New Password</b></label>
+                <input type="password" class="form-control" id="newPassword" placeholder="Enter new password">
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword"><b>Confirm New Password</b></label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm new password">
+              </div>
+              <button type="submit" class="btn btn-primary">Change Password</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>

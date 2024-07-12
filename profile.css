@@ -1,0 +1,49 @@
+/* Profile page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+img.rounded-circle {
+    border: 2px solid #007bff;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p.text-muted {
+    margin-bottom: 20px;
+}

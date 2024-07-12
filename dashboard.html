@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - ICU TV</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="text-center">Post an Article</h2>
+        <form action="post_article.html" method="POST">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" name="title" required>
+          </div>
+          <div class="form-group">
+            <label for="content">Content</label>
+            <textarea class="form-control" id="content" name="content" rows="10" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Post Article</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

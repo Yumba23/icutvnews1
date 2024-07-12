@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Settings - Admin Dashboard</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- Main Content -->
+    <main class="main_content">
+      <div class="container mt-4">
+        <h2>Site Settings</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"><B>GENERAL SETTINGS</B></div>
+              <div class="card-body">
+                <!-- General Settings Form -->
+                <form>
+                  <div class="form-group">
+                    <label for="siteName"><B>Site Name</B></label>
+                    <input type="text" class="form-control" id="siteName" placeholder="Enter site name">
+                  </div>
+                  <div class="form-group">
+                    <label for="siteDescription"><b>Site Description</b></label>
+                    <textarea class="form-control" id="siteDescription" rows="3" placeholder="Enter site description"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary"><b>Save Changes</b></button>
+                </form>
+                <!-- End General Settings Form -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"><b>SEO Settings</b></div>
+              <div class="card-body">
+                <!-- SEO Settings Form -->
+                <form>
+                  <div class="form-group">
+                    <label for="metaTitle"><b>Meta Title</b></label>
+                    <input type="text" class="form-control" id="metaTitle" placeholder="Enter meta title">
+                  </div>
+                  <div class="form-group">
+                    <label for="metaDescription"><b>Meta Description</b></label>
+                    <textarea class="form-control" id="metaDescription" rows="3" placeholder="Enter meta description"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+                <!-- End SEO Settings Form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main Content -->
+  </div>
+
+  <!-- Bootstrap JS and custom JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

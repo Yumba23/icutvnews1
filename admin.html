@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - ICU TV</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- Header -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">ICU TV</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Admin
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="profile.html">Profile</a>
+                <a class="dropdown-item" href="settings.html">Settings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="logout.html">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+    <main class="main_content">
+      <div class="container mt-4">
+        <h2>Admin DASHBOARD</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="list-group">
+              <a href="manage_users.html" class="list-group-item list-group-item-action">Manage Users</a>
+              <a href="manage_articles.html" class="list-group-item list-group-item-action">Manage Articles</a>
+              <a href="site_settings.html" class="list-group-item list-group-item-action">Site Settings</a>
+              <a href="reports.html" class="list-group-item list-group-item-action">Reports</a>
+              <a href="contact.index.html" class="list-group-item list-group-item-action">Contact</a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-header">Admin Overview</div>
+              <div class="card-body">
+                <p>Welcome to the Admin Dashboard. Here you can manage users, articles, and site settings.</p>
+                <a href="contact.index.html" class="btn btn-primary">Contact Us</a>
+                <!-- Add additional admin functionalities here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main Content -->
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports - Admin Dashboard</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- Header -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Admin Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+    <main class="main_content">
+      <div class="container mt-4">
+        <h2>Reports</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <!-- Report Filters -->
+            <div class="card">
+              <div class="card-header">Filter Reports</div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="reportType">Report Type</label>
+                    <select class="form-control" id="reportType">
+                      <option value="users">Users Report</option>
+                      <option value="articles">Articles Report</option>
+                      <option value="comments">Comments Report</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Apply Filter</button>
+                </form>
+              </div>
+            </div>
+            <!-- End Report Filters -->
+          </div>
+          <div class="col-md-9">
+            <!-- Report Table -->
+            <div class="card">
+              <div class="card-header">Reports Overview</div>
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Title</th>
+                      <th>Date</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>User Activity Report</td>
+                      <td>2024-07-12</td>
+                      <td>Reviewed</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Article Performance Report</td>
+                      <td>2024-07-11</td>
+                      <td>Pending</td>
+                    </tr>
+                    <!-- Additional rows for more reports -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- End Report Table -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main Content -->
+  </div>
+
+  <!-- Bootstrap JS and custom JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
